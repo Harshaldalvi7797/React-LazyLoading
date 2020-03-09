@@ -24,30 +24,15 @@ class Navbar extends Component {
                   Home <span className="sr-only">(current)</span>
                 </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
-                </a>
+              <li className="nav-item active">
+                <Link className="nav-link" as={Link} to="/about">
+                  About <span className="sr-only">(current)</span>
+                </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownId"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <div className="dropdown-menu" aria-labelledby="dropdownId">
-                  <a className="dropdown-item" href="#">
-                    Action 1
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    Action 2
-                  </a>
-                </div>
+              <li className="nav-item active">
+                <Link className="nav-link" as={Link} to="/login">
+                  Login <span className="sr-only">(current)</span>
+                </Link>
               </li>
             </ul>
           </div>
